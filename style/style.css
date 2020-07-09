@@ -1,0 +1,104 @@
+body {
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    color: gray;
+}
+
+.active {
+    background-color: gainsboro !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1100px) {
+    .first {
+        padding-left: 10rem !important;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-right: 10rem;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .5);
+}
+
+.overlay {
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 1;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.overlay p {}
+
+.separador {
+    background-color: white;
+    font-size: large;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.caption {
+    background-color: white;
+    font-size: medium;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.caption p {
+    margin-bottom: 0em;
+    color: gray;
+}
+
+.card {
+    text-align: center;
+    border: 0px;
+}
+
+.card-body {
+    color: gray;
+}
+
+.card-title {
+    padding-top: 1em;
+    margin-bottom: 0rem;
+    font-size: medium;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.bg-overlay {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+
+.about a {
+    position: relative;
+    margin: 10px auto;
+    margin-left: 4rem;
+    display: inline-block;
+}
