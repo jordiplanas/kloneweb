@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Project 6</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <ul class="nav justify-content-between pt-3 pb-3">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">KLONE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">BACK</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col">
+                <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="row pt-md-4 ">
+            <div class="col-md-4 pt-3 pt-md-0">
+                <a onclick="showModal(1)">
+                    <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid " alt="Responsive image ">
+                </a>
+                <div id="myModal1" class="modal mt-5 p-3 hidden-sm">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span onclick="hide(1)" class="close">&times;</span>
+                        <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid " alt="Responsive image ">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pt-3 pt-md-0">
+                <a onclick="showModal(2)">
+                    <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid " alt="Responsive image ">
+                </a>
+                <div id="myModal2" class="modal mt-5 p-3">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span onclick="hide(2)" class="close">&times;</span>
+                        <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid " alt="Responsive image ">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pt-3 pt-md-0">
+                <a onclick="showModal(3)">
+                    <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid " alt="Responsive image ">
+                </a>
+                <div id="myModal3" class="modal mt-5 p-3">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span onclick="hide(3)" class="close">&times;</span>
+                        <img src="https://picsum.photos/seed/picsum/1920/1080 " class="img-fluid " alt="Responsive image ">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3 pb-3 pt-md-5 pb-md-5 ">
+            <div class="col-md-4 ">
+                <ul class="list-group ">
+                    <li class="list-group-item "><strong>CLIENT: </strong>Klone</li>
+                    <li class="list-group-item "><strong>AGENCY: </strong>Klone</li>
+                    <li class="list-group-item "><strong>TECH: </strong>Photogrammetry</li>
+                    <li class="list-group-item "><strong>DATE: </strong>14/05/1095</li>
+                </ul>
+            </div>
+            <div class="col-md-8 pt-3 pt-md-0 ">
+                <h5>TITLE</h5>
+                <p class="align-middle ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="col-12 separador mt-md-3 ">...</div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <script>
+        var modal;
+
+        function showModal(n) {
+            modal = document.getElementById("myModal" + n);
+            if (window.innerWidth >= 600) {
+                modal.style.display = "block";
+            }
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+        function hide(n) {
+            modal = document.getElementById("myModal" + n);
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
