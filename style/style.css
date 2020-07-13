@@ -54,10 +54,17 @@
             .bg-overlay {
                 height: 30vh;
             }
+            .lead {
+                font-size: 0.8rem !important;
+            }
         }
         /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
         
-        @media (min-width: 768px) {}
+        @media (min-width: 768px) {
+            .lead {
+                font-size: 1.25rem !important;
+            }
+        }
         /* Large devices (desktops, 992px and up) */
         
         @media (min-width: 992px) {
@@ -70,7 +77,14 @@
         }
         /* Extra large devices (large desktops, 1200px and up) */
         
-        @media (min-width: 1200px) {}
+        @media (min-width: 1200px) {
+            .first {
+                padding-left: 12rem !important;
+            }
+            .navbar-light .navbar-nav .nav-link {
+                padding-right: 12rem;
+            }
+        }
         
         .navbar-light .navbar-nav .nav-link {
             color: rgb(0, 0, 0);
@@ -134,6 +148,7 @@
         .card-title {
             padding-top: 1em;
             margin-bottom: 0rem;
+            font-size: 1.1rem;
             font-weight: bold;
             background-color: transparent;
         }
