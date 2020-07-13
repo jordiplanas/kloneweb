@@ -16,6 +16,25 @@
             color: black;
         }
         
+        h4 {
+            font-weight: bold;
+        }
+        
+        h5 {
+            margin: 0em !important;
+            font-size: 1.1rem !important;
+            font-weight: 600;
+        }
+        
+        .overlay p {
+            font-weight: 500;
+            color: white;
+        }
+        
+        .overlay h1 {
+            font-weight: bold !important;
+        }
+        
         .navbar-expand-lg .navbar-collapse {
             align-items: center;
             justify-content: center;
@@ -55,7 +74,7 @@
         
         .navbar-light .navbar-nav .nav-link {
             color: rgb(0, 0, 0);
-            font-weight: bolder;
+            font-weight: bold;
         }
         
         .navbar-expand-lg .navbar-collapse {
@@ -64,7 +83,7 @@
         
         .navbar-light .navbar-brand {
             color: black !important;
-            font-weight: bolder;
+            font-weight: bold;
         }
         
         .overlay {
@@ -79,8 +98,6 @@
             padding-right: 15px;
             padding-left: 15px;
         }
-        
-        .overlay p {}
         
         .separador {
             background-color: transparent;
@@ -117,7 +134,7 @@
         .card-title {
             padding-top: 1em;
             margin-bottom: 0rem;
-            /* font-weight: bolder; */
+            font-weight: bold;
             background-color: transparent;
         }
         
@@ -223,12 +240,16 @@
             color: black !important;
         }
         
-        nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-item.show .nav-link,
         .nav-tabs .nav-link.active {
             color: black;
             background-color: transparent !important;
             text-decoration: underline;
             border: 0 !important;
+        }
+        
+        .nav-tabs {
+            padding-bottom: 10px;
         }
         
         .list-group-item {
