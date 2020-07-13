@@ -1,7 +1,18 @@
         body {
             background-color: white;
             font-family: 'Open Sans', sans-serif;
-            /*letter-spacing: .25em;*/
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            letter-spacing: .2em;
+        }
+        
+        h5 a {
+            text-decoration: none !important;
         }
         
         .bg-light {
@@ -10,6 +21,8 @@
         
         a {
             color: black;
+            text-underline-position: under !important;
+            text-decoration: underline;
         }
         
         p {
@@ -18,12 +31,14 @@
         
         h4 {
             font-weight: bold;
+            font-size: 20px;
         }
         
         h5 {
             margin: 0em !important;
             font-size: 1.1rem !important;
-            font-weight: 600;
+            /* font-weight: 600; */
+            /* text-decoration: none; */
         }
         
         .overlay p {
@@ -47,6 +62,7 @@
             }
             .navbar-light .navbar-nav .nav-link {
                 padding-right: 10rem;
+                letter-spacing: .2em;
             }
         }
         
@@ -68,6 +84,11 @@
         /* Large devices (desktops, 992px and up) */
         
         @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 3rem !important;
+                padding-left: 3rem !important;
+                /* text-shadow: 0 0 black; */
+            }
             .bg-overlay {
                 height: 450px;
             }
@@ -78,11 +99,10 @@
         /* Extra large devices (large desktops, 1200px and up) */
         
         @media (min-width: 1200px) {
-            .first {
-                padding-left: 12rem !important;
-            }
-            .navbar-light .navbar-nav .nav-link {
-                padding-right: 12rem;
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 7rem !important;
+                padding-left: 7rem !important;
+                /* text-shadow: 0 0 black; */
             }
         }
         
@@ -149,6 +169,7 @@
             padding-top: 1em;
             margin-bottom: 0rem;
             font-size: 1.1rem;
+            letter-spacing: .2em;
             font-weight: bold;
             background-color: transparent;
         }
@@ -248,6 +269,7 @@
         .nav-tabs .nav-link {
             /* border: 1px solid transparent; */
             border: 0px !important;
+            text-decoration: none;
         }
         
         .nav-tabs .nav-link:hover {
