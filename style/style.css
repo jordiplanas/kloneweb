@@ -1,264 +1,240 @@
-body {
-    background-color: white;
-    font-family: 'Oswald', sans-serif;
-}
-
-a {
-    color: gray;
-}
-
-.active {
-    background-color: gainsboro !important;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    align-items: center;
-    justify-content: center;
-    text-align: right;
-}
-
-@media screen and (min-width: 1100px) {
-    .first {
-        padding-left: 10rem !important;
-    }
-    .navbar-light .navbar-nav .nav-link {
-        padding-right: 10rem;
-    }
-}
-
-@media (min-width: 100px) {
-    .logo {
-        display: inline;
-    }
-    p {
-        font-size: .5rem;
-    }
-    .lead {
-        font-size: 0.7rem;
-    }
-    h4 {
-        font-size: .6rem;
-    }
-    h3 {
-        font-size: .6rem;
-    }
-    h5 {
-        font-size: .6rem !important;
-    }
-    h1 {
-        font-size: .9rem;
-    }
-    .bg-overlay {
-        height: 30vh;
-    }
-    .separador {
-        font-size: 14px;
-    }
-    /*1rem = 16px*/
-}
-
-
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-
-@media (min-width: 768px) {
-    p {
-        font-size: 1rem;
-    }
-    /*1rem = 16px*/
-    .lead {
-        font-size: 1rem;
-    }
-    h4 {
-        font-size: 1.5rem;
-    }
-    .separador {
-        font-size: large;
-    }
-    h5 {
-        font-size: 1.25rem;
-    }
-    h3 {
-        font-size: 1.6rem;
-    }
-}
-
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    .bg-overlay {
-        height: 450px;
-    }
-    .logo {
-        display: none;
-    }
-    /*1rem = 16px*/
-}
-
-
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-    h1 {
-        font-size: 3rem;
-    }
-    /*1rem = 16px*/
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, .5);
-}
-
-.navbar-expand-lg .navbar-collapse {
-    text-align: right !important;
-}
-
-.overlay {
-    position: absolute;
-    color: white;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .3);
-    z-index: 1;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.overlay p {}
-
-.separador {
-    background-color: white;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.caption {
-    background-color: white;
-    font-size: medium;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    vertical-align: middle;
-}
-
-.caption p {
-    margin-bottom: 0em;
-    color: gray;
-}
-
-.card {
-    text-align: center;
-    border: 0px;
-}
-
-.card-body {
-    color: gray;
-}
-
-.card-title {
-    padding-top: 1em;
-    margin-bottom: 0rem;
-    font-size: medium;
-}
-
-.row {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-}
-
-button:hover {
-    background-color: transparent !important;
-}
-
-button:visited {
-    background-color: transparent !important;
-}
-
-.bg-overlay {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    padding-top: 50px;
-}
-
-.about a {
-    font-size: medium;
-}
-
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-}
-
-
-/* Modal Content/Box */
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    /* padding: 20px; */
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
-}
-
-
-/* The Close Button */
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    color: gray !important;
-    text-decoration: none !important;
-}
-
-a:active {
-    text-decoration: none;
-}
+        body {
+            background-color: white;
+            font-family: 'Open Sans', sans-serif;
+            /*letter-spacing: .25em;*/
+        }
+        
+        .bg-light {
+            background-color: transparent !important;
+        }
+        
+        a {
+            color: black;
+        }
+        
+        p {
+            color: black;
+        }
+        
+        .navbar-expand-lg .navbar-collapse {
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+        
+        @media screen and (min-width: 1100px) {
+            .first {
+                padding-left: 10rem !important;
+            }
+            .navbar-light .navbar-nav .nav-link {
+                padding-right: 10rem;
+            }
+        }
+        
+        @media (min-width: 100px) {
+            .bg-overlay {
+                height: 30vh;
+            }
+        }
+        /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+        
+        @media (min-width: 768px) {}
+        /* Large devices (desktops, 992px and up) */
+        
+        @media (min-width: 992px) {
+            .bg-overlay {
+                height: 450px;
+            }
+            .logo {
+                display: none;
+            }
+        }
+        /* Extra large devices (large desktops, 1200px and up) */
+        
+        @media (min-width: 1200px) {}
+        
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        
+        .navbar-expand-lg .navbar-collapse {
+            text-align: right !important;
+        }
+        
+        .navbar-light .navbar-brand {
+            color: black !important;
+            font-weight: bolder;
+        }
+        
+        .overlay {
+            position: absolute;
+            color: white;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: 1;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        .overlay p {}
+        
+        .separador {
+            background-color: transparent;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .caption {
+            background-color: transparent !important;
+            font-size: medium;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            vertical-align: middle;
+        }
+        
+        .caption p {
+            margin-bottom: 0em;
+        }
+        
+        .card {
+            text-align: center;
+            border: 0px;
+        }
+        
+        .card-body {
+            color: black;
+            background-color: transparent!important;
+            font-size: 14px;
+        }
+        
+        .card-title {
+            padding-top: 1em;
+            margin-bottom: 0rem;
+            /* font-weight: bolder; */
+            background-color: transparent;
+        }
+        
+        .card {
+            border: 0;
+            background-color: transparent;
+        }
+        
+        .navbar-toggler {
+            color: rgba(0, 0, 0);
+            border-color: transparent !important;
+        }
+        
+        .row {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+        }
+        
+        button:hover {
+            background-color: transparent !important;
+        }
+        
+        button:visited {
+            background-color: transparent !important;
+        }
+        
+        .bg-overlay {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            color: #fff;
+            padding-top: 50px;
+        }
+        /* The Modal (background) */
+        
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        
+        .close {
+            color: black;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: gray;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        a:visited {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: black !important;
+        }
+        
+        a:active {
+            text-decoration: underline;
+            color: black !important;
+        }
+        
+        .nav-tabs .nav-link {
+            /* border: 1px solid transparent; */
+            border: 0px !important;
+        }
+        
+        .nav-tabs .nav-link:hover {
+            text-decoration: underline;
+            color: black !important;
+        }
+        
+        nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: black;
+            background-color: transparent !important;
+            text-decoration: underline;
+            border: 0 !important;
+        }
+        
+        .list-group-item {
+            background-color: transparent !important;
+        }
+        
+        .pmenu {
+            font-weight: bold;
+        }
