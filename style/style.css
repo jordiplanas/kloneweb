@@ -202,7 +202,7 @@
             background-size: cover !important;
             background-position: center center !important;
             color: #fff;
-            padding-top: 1.1rem;
+            padding-top: 1rem;
         }
         /* The Modal (background) */
         
@@ -295,4 +295,21 @@
         
         .pmenu {
             font-weight: bold;
+        }
+        
+        #instafeed {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 0.5rem;
+            max-width: 64rem;
+            margin: auto;
+        }
+        
+        #instafeed a {
+            display: block;
+        }
+        
+        #instafeed img {
+            display: block;
+            width: 100%;
         }
